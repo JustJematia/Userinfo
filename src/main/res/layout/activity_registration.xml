@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/PName"
+        android:layout_width="143dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/Name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/EnterName"
+        app:layout_constraintMarginStart="16dp"
+        app:layout_constraintMarginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EnterName"
+        android:layout_width="225dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="#7F7D9C"
+        android:ems="10"
+        android:hint="@string/enter_name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/PName"
+        app:layout_constraintTop_toTopOf="@id/PName"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/Temail"
+        android:layout_width="68dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/Email"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/EnterAddress"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintMarginStart="16dp"
+        app:layout_constraintMarginTop="30p"
+        app:layout_constraintStart_toStartOf="@id/PName"
+        app:layout_constraintTop_toTopOf="@id/PName" />
+
+    <EditText
+        android:id="@+id/EnterAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="56dp"
+        android:background="#7F7D9C"
+        android:ems="10"
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginStart="16dp"
+        app:layout_constraintTop_toTopOf="@id/Temail"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <TextView
+        android:id="@+id/Nation"
+        android:layout_width="110dp"
+        android:layout_height="29dp"
+        android:text="@string/Nationality"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <EditText
+        android:id="@+id/ENationality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7F7D9C"
+        android:ems="10"
+        android:hint="@string/enter_nationality"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="101dp"
+        android:layout_height="25dp"
+        android:text="@string/Address"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <EditText
+        android:id="@+id/EAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7F7D9C"
+        android:ems="10"
+        android:hint="@string/enter_address"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <TextView
+        android:id="@+id/DOB"
+        android:layout_width="114dp"
+        android:layout_height="27dp"
+        android:text="@string/dob"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <EditText
+        android:id="@+id/EDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7F7D9C"
+        android:ems="10"
+        android:hint="@string/enter_date_of_birth"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <TextView
+        android:id="@+id/EBackground"
+        android:layout_width="209dp"
+        android:layout_height="32dp"
+        android:text="@string/Education_background"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <EditText
+        android:id="@+id/EBackground"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="316dp"
+        android:background="#7F7D9C"
+        android:ems="10"
+        android:hint="@string/enter_education_background"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="9dp" />
+
+    <TextView
+        android:id="@+id/Pmode"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:text="@string/preferred_mode_of_contact"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <RadioGroup
+        android:layout_width="409dp"
+        android:layout_height="97dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="469dp">
+
+        <RadioButton
+            android:id="@+id/PhoneButton"
+            android:layout_width="112dp"
+            android:layout_height="28dp"
+            android:text="@string/Phone" />
+
+        <RadioButton
+            android:id="@+id/EmailButton3"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Email_Address" />
+
+        <RadioButton
+            android:id="@+id/NoneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/none"
+            tools:layout_editor_absoluteX="296dp"
+            tools:layout_editor_absoluteY="649dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="578dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
